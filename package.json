@@ -22,6 +22,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "babel-loader": "^8.2.2",
+    "core-js": "^3.8.1",
     "cross-env": "^7.0.3",
     "electron": "^11.1.1",
     "electron-builder": "^22.9.1",
@@ -30,13 +31,16 @@
     "npm-run-all": "^4.1.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7",
     "styled-components": "^5.2.1",
     "typescript": "^4.1.3",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.3.0",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@material-ui/core": "^4.11.2"
+  },
   "electronmon": {
     "patterns": [
       "!src/**",
@@ -44,8 +48,8 @@
       "!node_modules/**",
       "!package.json",
       "!tsconfig.json",
-      "dist/main.js",
-      "!test/**"
+      "!test/**",
+      "dist/main.js"
     ]
   },
   "build": {

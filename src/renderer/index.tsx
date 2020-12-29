@@ -1,9 +1,9 @@
+// Babel Garbage
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 import React from 'react';
-import ReactDOM from 'react-dom';
- 
-const title = 'React testing! and Babel';
- 
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('root')
-);
+import ReactDOM from "react-dom";
+import App from "./App/App";
+
+ReactDOM.render(<App />, document.getElementById("root"));
